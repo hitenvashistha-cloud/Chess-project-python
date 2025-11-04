@@ -64,9 +64,9 @@ def load_engine(strength_level):
                 AI_DEPTH = 12
             elif strength_level == "master":
                 AI_DEPTH = 18
-            print(f"✅ Stockfish loaded (Depth {AI_DEPTH})")
+            print(f"Stockfish loaded (Depth {AI_DEPTH})")
         except Exception as e:
-            print("⚠ Engine load error:", e)
+            print("Engine load error:", e)
             engine = None
     else:
         print("⚠ Stockfish not found. Using random AI.")
